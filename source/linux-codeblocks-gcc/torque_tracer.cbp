@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Torque Tracer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../torque_tracer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="/usr/include/freetype2" />
+					<Add directory="/usr/GL" />
+				</Compiler>
+				<Linker>
+					<Add library="/usr/lib/libfreetype.so" />
+					<Add library="/usr/lib/libGLU.so" />
+					<Add library="/usr/lib/libGL.so" />
+					<Add library="/usr/lib/libSDL_image.so" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="../../torque_tracer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="/usr/include/freetype2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="/usr/lib/libfreetype.so" />
+					<Add library="/usr/lib/libGL.so" />
+					<Add library="/usr/lib/libGLU.so" />
+					<Add library="/usr/lib/libSDL_image.so" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`sdl-config --cflags`" />
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="`sdl-config --libs`" />
+		</Linker>
+		<Unit filename="../conversions.cpp" />
+		<Unit filename="../font.cpp" />
+		<Unit filename="../font_class.h" />
+		<Unit filename="../ini_parse.cpp" />
+		<Unit filename="../input_buttons.h" />
+		<Unit filename="../main.cpp" />
+		<Unit filename="../opengl.cpp" />
+		<Unit filename="../resources.h" />
+		<Unit filename="../sdl.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

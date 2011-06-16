@@ -1,0 +1,264 @@
+# depslib dependency file v1.0
+1265739907 source:/home/zimluura/Projects/Programming/vdrift_torque_curve/source/vdrift_torque_curve.cpp
+	<ft2build.h>
+	<freetype/freetype.h>
+	<freetype/ftglyph.h>
+	<freetype/ftoutln.h>
+	<freetype/fttrigon.h>
+	"SDL.h"
+	"SDL_opengl.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<string>
+
+1288728047 /usr/include/freetype2/freetype/freetype.h
+	<ft2build.h>
+
+1288728047 /usr/include/freetype2/freetype/ftglyph.h
+	<ft2build.h>
+
+1288728047 /usr/include/freetype2/freetype/ftoutln.h
+	<ft2build.h>
+
+1288728047 /usr/include/freetype2/freetype/fttrigon.h
+
+1278057011 /usr/include/SDL/SDL.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_audio.h"
+	"SDL_cdrom.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_loadso.h"
+	"SDL_mutex.h"
+	"SDL_rwops.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_config.h
+	"SDL_platform.h"
+	<stdarg.h>
+
+1278057011 /usr/include/SDL/SDL_platform.h
+
+1278057011 /usr/include/SDL/begin_code.h
+
+1278057011 /usr/include/SDL/close_code.h
+
+1278057011 /usr/include/SDL/SDL_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_endian.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_cdrom.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_cpuinfo.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_active.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_active.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keysym.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_keysym.h
+
+1278057011 /usr/include/SDL/SDL_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_video.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1278057011 /usr/include/SDL/SDL_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1278057011 /usr/include/SDL/SDL_opengl.h
+	"SDL_config.h"
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<gl.h>
+	<glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<windows.h>
+	<stddef.h>
+
+1283487410 source:/home/zimluura/Projects/Programming/vdrift_torque_curve/source/font.cpp
+	"resources.h"
+
+1283487410 /home/zimluura/Projects/Programming/vdrift_torque_curve/source/resources.h
+	<math.h>
+	<ft2build.h>
+	<freetype/freetype.h>
+	<freetype/ftglyph.h>
+	<freetype/ftoutln.h>
+	<freetype/fttrigon.h>
+	"SDL.h"
+	"SDL_opengl.h"
+	"SDL_image.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<string>
+	<vector>
+	"font_class.h"
+	"input_buttons.h"
+
+1294442121 source:/home/zimluura/Projects/Programming/vdrift_torque_curve/source/main.cpp
+	"resources.h"
+
+1283487410 /home/zimluura/Projects/Programming/vdrift_torque_curve/source/font_class.h
+
+1283487525 source:/home/zimluura/Projects/Programming/vdrift_torque_curve/source/opengl.cpp
+	"resources.h"
+
+1273984075 /usr/include/SDL/SDL_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1283016546 source:/home/zimluura/Projects/Programming/vdrift_torque_curve/source/configuration.cpp
+	"resources.h"
+
+1294442675 source:/home/zimluura/Projects/Programming/vdrift_torque_curve/source/conversions.cpp
+	"resources.h"
+
+1283487410 source:/home/zimluura/Projects/Programming/vdrift_torque_curve/source/ini_parse.cpp
+	"resources.h"
+
+1283487410 /home/zimluura/Projects/Programming/vdrift_torque_curve/source/input_buttons.h
+
+1283487410 source:/home/zimluura/Projects/Programming/vdrift_torque_curve/source/sdl.cpp
+	"resources.h"
+

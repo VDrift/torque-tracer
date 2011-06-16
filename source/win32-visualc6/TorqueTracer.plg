@@ -1,0 +1,47 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TorqueTracer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Zimluura\LOCALS~1\Temp\RSP27.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/TorqueTracer.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\NetworkProjects\torque_tracer\source\conversions.cpp"
+"D:\NetworkProjects\torque_tracer\source\font.cpp"
+"D:\NetworkProjects\torque_tracer\source\ini_parse.cpp"
+"D:\NetworkProjects\torque_tracer\source\main.cpp"
+"D:\NetworkProjects\torque_tracer\source\opengl.cpp"
+"D:\NetworkProjects\torque_tracer\source\sdl.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Zimluura\LOCALS~1\Temp\RSP27.tmp" 
+Creating temporary file "C:\DOCUME~1\Zimluura\LOCALS~1\Temp\RSP28.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib sdl.lib opengl32.lib glu32.lib freetype.lib sdl_image.lib /nologo /entry:"SDL_main" /subsystem:windows /incremental:no /pdb:"Release/TorqueTracer.pdb" /machine:I386 /out:"../../TorqueTracer.exe" 
+".\Release\conversions.obj"
+".\Release\font.obj"
+".\Release\ini_parse.obj"
+".\Release\main.obj"
+".\Release\opengl.obj"
+".\Release\sdl.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\Zimluura\LOCALS~1\Temp\RSP28.tmp"
+<h3>Output Window</h3>
+Compiling...
+conversions.cpp
+font.cpp
+ini_parse.cpp
+main.cpp
+opengl.cpp
+sdl.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+TorqueTracer.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
