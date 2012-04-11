@@ -41,7 +41,7 @@ For the most accurate tracing you should set the resolution to your monitors max
 
 ## Text Mode
 
-(complete but may need testing)
+(complete but may need testing)  
 When you see a car's quoted torque and horsepower from the manufacturer it says something like this:
 
 > 220 bhp @ 5500 rpm  
