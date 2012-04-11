@@ -7,14 +7,17 @@
 #include <freetype/ftoutln.h>
 #include <freetype/fttrigon.h>
 
-// SDL
+//SDL and OpenGL Headers
+#ifdef __APPLE__
+#include "SDL/SDL.h"
+#include "SDL/SDL_opengl.h"
+#include "SDL_image/SDL_image.h"
+
+#else
 #include "SDL.h"
 #include "SDL_opengl.h"
 #include "SDL_image.h"
-
-//OpenGL Headers
-#include <GL/gl.h>
-#include <GL/glu.h>
+#endif
 
 // stl
 #include <string>
