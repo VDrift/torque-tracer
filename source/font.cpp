@@ -24,7 +24,7 @@ void freetype_genFontTexture_ascii(FT_Face face, c_font *gameFont, unsigned int 
     FT_BitmapGlyph  bitmapGlyphArray[glyphsToRender];
     
     unsigned int lv;    // loop variable
-        
+    
     // first loop through glyphs to determine how big the bigest one is.
     for (lv=0 ; lv<glyphsToRender ; lv++)
     {
@@ -224,6 +224,5 @@ void load_font (const char *fontFileName, c_font *gameFont, unsigned int pixel_h
     
     // freetype cleanup
     FT_Done_Face(face);
-    FT_Done_FreeType(library);
-    
+    FT_Done_FreeType(library);  
 }

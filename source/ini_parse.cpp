@@ -12,7 +12,7 @@ void readSetting(char *fileBuffer, string heading, string setting, unsigned int 
 	char *spot = fileBuffer;
     
 	char delim[] = {'\x20', '\x0d', '\x0a', '=', '\x00'};
-        
+    
 	heading.insert(0, "[");
 	heading += "]";
 	//printf("heading: %s\n", heading.c_str() );

@@ -75,7 +75,7 @@ void insertPointInCurve(c_vector2f pos)
 	// this works
 	//torqueCurve.push_back(pos);
     
-    	//////////////////////////////////////////////
+    //////////////////////////////////////////////
 	// but this other way is probably better
 	if (torqueCurve.size() == 0)
 	{
@@ -228,7 +228,7 @@ void writeTorqueCurve()
 int main( int argc, char **argv )
 {
 	load_configuration("configuration.ini");
-        
+    
     SDL_Surface *surface;
     SDL_Event event;
     
@@ -259,7 +259,7 @@ int main( int argc, char **argv )
     
     OpenGL_init();
     load_font("Vera.ttf", &font[0], 18);
-  
+    
 	//////////////////////////////////////
 	// torque curve initial points - for debugging
 	/*torqueCurve.push_back( vector2fSet(-0.7, -0.7) );
@@ -349,7 +349,7 @@ int main( int argc, char **argv )
                         
 						if ( enteredText.size() > 0)
 							enteredText.resize(enteredText.size()-1);
-                    
+                        
 					}
                     
 					if ( klv == SDLK_RETURN )
@@ -388,7 +388,7 @@ int main( int argc, char **argv )
 						// this works
 						//if (torqueCurve.size() > 0)
 						//	torqueCurve.pop_back();
-
+                        
 						//////////////////////////////////////////////
 						// but we should probably erase whatever were closest to
 						if ( torqueCurve.size() == 0)
@@ -449,23 +449,23 @@ int main( int argc, char **argv )
 				}
 			}
 		}
- 
+        
 		// debug text
 		for (unsigned int l=0 ; l<torqueCurve.size() ; l++ )
 		{
 			//printf("(%f,%f)\n", torqueCurve[l].a[0], torqueCurve[l].a[1]);
 		}
 		//printf("\n");
-
+        
         OpenGL_render();
         SDL_GL_SwapBuffers();
     }
     
     printf("done.\n");
-
+    
 	// reset resolution
 	SDL_Quit();
-
+    
 	/////////////////////////////////////
 	// every generation of windows gets
 	// progressively lamer.  xp requires
@@ -474,6 +474,6 @@ int main( int argc, char **argv )
 #ifdef WIN32
     FatalExit(666);
 #endif
-
+    
 	return 0;
 }

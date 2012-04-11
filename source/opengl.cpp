@@ -179,9 +179,9 @@ void OpenGL_render()
     
 	glPushMatrix();
 	//glLoadIdentity();
-
+    
 	glColor3f(1.0,1.0,1.0);
-
+    
 	if (inputMode == INPUT_MODE_RESIZE)
 		displayString(-1.33f, 0.95f, 0.03f, 0, "(m)ode: resize picture");
 	else if ( inputMode == INPUT_MODE_DRAW)
@@ -206,14 +206,14 @@ void OpenGL_render()
 		displayString(-1.33f, 0.80f, 0.03f, 0, "(u)nits: imperial");
     
 	displayString(-1.33f, 0.75f, 0.03f, 0, "torque range: =/-");
-
+    
 	displayString(-1.33f, 0.40f, 0.03f, 0, "(w)rite file");
 	displayString(-1.33f, 0.35f, 0.03f, 0, "esc to quit ");
-
+    
 	float ts = 1.0f;			// torque scale
-
+    
 	float textScale = 0.03f;
-
+    
 	if (torqueMode == TORQUEMODE_METRIC)
 	{
 		glColor3f(0.2f, 1.0f, 0.2f);
@@ -267,20 +267,20 @@ void OpenGL_render()
 	displayString(gridStartX-0.02 + incrementX*11,	gridStartY-0.05, textScale, -60, "11000");
 	displayString(gridStartX-0.02 + incrementX*12,	gridStartY-0.05, textScale, -60, "12000");
 	glPopMatrix();
-
+    
     /////////////////////////////////////////
     // draw grid
     glPushMatrix();
     glBindTexture(GL_TEXTURE_2D, 0);
     glColor3f(0.05f, 0.05f, 0.05f);
-
+    
 	glTranslatef(gridStartX, gridStartY, 0.0);
     
 	float gv = 0.05f; // gray value
     
 	float gmn = 0.25f;	// gray min
 	float gmx = 0.75f;	// gray max
-
+    
 	unsigned int sizeX = 12;
 	unsigned int sizeY = 20;
     
@@ -305,7 +305,7 @@ void OpenGL_render()
         }
     }
 	glPopMatrix();
-
+    
     /////////////////////////////////////////
     // draw current torque curve
 	float hsize = 0.0025f;
@@ -327,7 +327,7 @@ void OpenGL_render()
 		glVertex3f ( torqueCurve[tlv].a[0], torqueCurve[tlv].a[1], 0 );
 	}
 	glEnd();
-
+    
 	// draw a horsepower curve
 	// (Torque x Engine speed) / 5,252 = Horsepower
 	glColor3f(0.0f, 0.6f, 0.0f);
@@ -338,7 +338,7 @@ void OpenGL_render()
 	{
 		float rpm = (torqueCurve[hplv].a[0] - gridStartX) * 1000 / incrementX;
 		//printf("rpm: %f\n", rpm);
-
+        
 		float torque = (torqueCurve[hplv].a[1] - gridStartY) * 50 / incrementY;
 		//printf("torque: %f\n", torque);
         
@@ -367,7 +367,7 @@ void OpenGL_render()
 		glVertex3f ( torqueCurve[hplv].a[0], scaledPower, 0 );
 	}
 	glEnd();
-
+    
 	/////////////////////////////////////////////////////
 	// figure out which point is closest to the mouse
 	// and draw a dot there
