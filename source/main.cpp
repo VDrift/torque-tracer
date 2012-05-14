@@ -194,9 +194,14 @@ void processEnteredText()
 
 void writeTorqueCurve()
 {
+#ifdef __APPLE__
+    string macDir = get_mac_dir();
+    string filename = macDir + "/../torque_curve.txt";
+#else
 	string filename = "torque_curve.txt";
+#endif
     
-	printf("\nwritting: %s\n", filename.c_str() );
+	printf("\nwriting: %s\n", filename.c_str() );
     
 	FILE *fp = fopen(filename.c_str(), "w+");
     
@@ -227,7 +232,13 @@ void writeTorqueCurve()
 
 int main( int argc, char **argv )
 {
-	load_configuration("configuration.ini");
+#ifdef __APPLE__
+    string macDir = get_mac_dir();
+    string configFile = macDir + "/../configuration.ini";
+#else
+    string configFile = "configuration.ini";
+#endif
+	load_configuration(configFile);
     
     SDL_Surface *surface;
     SDL_Event event;
@@ -258,7 +269,13 @@ int main( int argc, char **argv )
 	bindKeys();
     
     OpenGL_init();
-    load_font("Vera.ttf", &font[0], 18);
+#ifdef __APPLE__
+    string fontPath = macDir + "/Contents/Resources/Vera.ttf";
+    const char *fontFile = strdup(fontPath.c_str());
+#else
+    const char *fontFile = "Vera.ttf";
+#endif
+    load_font(fontFile, &font[0], 18);
     
 	//////////////////////////////////////
 	// torque curve initial points - for debugging

@@ -63,6 +63,10 @@ float convert_RpmToXPos(float rpm);
 float convert_YPosToTorque(float ypos);
 float convert_TorqueToYPos(float torque);
 
+#ifdef __APPLE__
+string get_mac_dir();
+#endif
+
 /////////////////////////
 // externs
 

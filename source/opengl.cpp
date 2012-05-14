@@ -115,8 +115,16 @@ void OpenGL_init()
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     
-	textureLoad_sdl("mouse.png", &mouseTexture);
-	textureLoad_sdl("curve.jpg", &torqueCurveTexture);
+#ifdef __APPLE__
+    string macDir = get_mac_dir();
+    string mouseFile = macDir + "/Contents/Resources/mouse.png";
+    string curveFile = macDir + "/../curve.jpg";
+#else
+    string mouseFile = "mouse.png";
+    string curveFile = "curve.jpg";
+#endif
+    textureLoad_sdl(mouseFile, &mouseTexture);
+	textureLoad_sdl(curveFile, &torqueCurveTexture);
 }
 
 void OpenGL_drawPoint(c_vector2f point, float size)

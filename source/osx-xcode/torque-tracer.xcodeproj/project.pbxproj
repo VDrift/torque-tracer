@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F530E39A14E9697B004EB7C9 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F530E39814E9697B004EB7C9 /* SDLMain.m */; };
+		F530E3B314E97B8D004EB7C9 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F530E3B014E97B8D004EB7C9 /* icon.icns */; };
+		F563DDE7146EDB0800D178C1 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F563DDE6146EDB0800D178C1 /* OpenGL.framework */; };
+		F5750351153731E5002D2177 /* conversions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5750348153731E5002D2177 /* conversions.cpp */; };
+		F5750352153731E5002D2177 /* font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F575034A153731E5002D2177 /* font.cpp */; };
+		F5750353153731E5002D2177 /* ini_parse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F575034B153731E5002D2177 /* ini_parse.cpp */; };
+		F5750354153731E5002D2177 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F575034D153731E5002D2177 /* main.cpp */; };
+		F5750355153731E5002D2177 /* opengl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F575034E153731E5002D2177 /* opengl.cpp */; };
+		F5750356153731E5002D2177 /* sdl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5750350153731E5002D2177 /* sdl.cpp */; };
+		F5750359153731F8002D2177 /* mouse.png in Resources */ = {isa = PBXBuildFile; fileRef = F5750357153731F8002D2177 /* mouse.png */; };
+		F575035A153731F8002D2177 /* Vera.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5750358153731F8002D2177 /* Vera.ttf */; };
+		F5B6BF7114EFE3E30004BB0D /* FreeType.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B6BF7014EFE3E30004BB0D /* FreeType.framework */; };
+		F5B6BF7214EFE4460004BB0D /* FreeType.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5B6BF7014EFE3E30004BB0D /* FreeType.framework */; };
+		F5C09E1215398B2A008D6C1C /* config_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = F5C09E1115398B2A008D6C1C /* config_mac.mm */; };
+		F5D322CB15619D2B00F23111 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F563DD96146ED93200D178C1 /* AppKit.framework */; };
+		F5D322CF1561A02500F23111 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D322CD1561A02500F23111 /* SDL_image.framework */; };
+		F5D322D01561A02500F23111 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D322CE1561A02500F23111 /* SDL.framework */; };
+		F5D322D11561A02900F23111 /* SDL_image.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5D322CD1561A02500F23111 /* SDL_image.framework */; };
+		F5D322D21561A02900F23111 /* SDL.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5D322CE1561A02500F23111 /* SDL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F563DDDD146EDA4900D178C1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F5B6BF7214EFE4460004BB0D /* FreeType.framework in CopyFiles */,
+				F5D322D11561A02900F23111 /* SDL_image.framework in CopyFiles */,
+				F5D322D21561A02900F23111 /* SDL.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F530E39714E9697B004EB7C9 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = "<group>"; };
+		F530E39814E9697B004EB7C9 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = "<group>"; };
+		F530E3B014E97B8D004EB7C9 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		F530E3B114E97B8D004EB7C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F530E3B214E97B8D004EB7C9 /* License.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = License.rtf; sourceTree = "<group>"; };
+		F563DD8F146ED93200D178C1 /* Torque Tracer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Torque Tracer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F563DD96146ED93200D178C1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F563DDE6146EDB0800D178C1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		F5750348153731E5002D2177 /* conversions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = conversions.cpp; path = ../conversions.cpp; sourceTree = "<group>"; };
+		F5750349153731E5002D2177 /* font_class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = font_class.h; path = ../font_class.h; sourceTree = "<group>"; };
+		F575034A153731E5002D2177 /* font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = font.cpp; path = ../font.cpp; sourceTree = "<group>"; };
+		F575034B153731E5002D2177 /* ini_parse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ini_parse.cpp; path = ../ini_parse.cpp; sourceTree = "<group>"; };
+		F575034C153731E5002D2177 /* input_buttons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = input_buttons.h; path = ../input_buttons.h; sourceTree = "<group>"; };
+		F575034D153731E5002D2177 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = "<group>"; };
+		F575034E153731E5002D2177 /* opengl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = opengl.cpp; path = ../opengl.cpp; sourceTree = "<group>"; };
+		F575034F153731E5002D2177 /* resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = resources.h; path = ../resources.h; sourceTree = "<group>"; };
+		F5750350153731E5002D2177 /* sdl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sdl.cpp; path = ../sdl.cpp; sourceTree = "<group>"; };
+		F5750357153731F8002D2177 /* mouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mouse.png; path = ../../mouse.png; sourceTree = "<group>"; };
+		F5750358153731F8002D2177 /* Vera.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Vera.ttf; path = ../../Vera.ttf; sourceTree = "<group>"; };
+		F5B6BF7014EFE3E30004BB0D /* FreeType.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FreeType.framework; path = Frameworks/FreeType.framework; sourceTree = "<group>"; };
+		F5C09E1115398B2A008D6C1C /* config_mac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = config_mac.mm; sourceTree = "<group>"; };
+		F5D322CD1561A02500F23111 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = Frameworks/SDL_image.framework; sourceTree = "<group>"; };
+		F5D322CE1561A02500F23111 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = Frameworks/SDL.framework; sourceTree = "<group>"; };
+		F5DF5FC41503AAF700F41C70 /* Torque Tracer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Torque Tracer.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F563DD8C146ED93200D178C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D322CB15619D2B00F23111 /* AppKit.framework in Frameworks */,
+				F563DDE7146EDB0800D178C1 /* OpenGL.framework in Frameworks */,
+				F5B6BF7114EFE3E30004BB0D /* FreeType.framework in Frameworks */,
+				F5D322CF1561A02500F23111 /* SDL_image.framework in Frameworks */,
+				F5D322D01561A02500F23111 /* SDL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F530E39B14E9699D004EB7C9 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				F5C09E1115398B2A008D6C1C /* config_mac.mm */,
+				F530E39714E9697B004EB7C9 /* SDLMain.h */,
+				F530E39814E9697B004EB7C9 /* SDLMain.m */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		F563DD84146ED93200D178C1 = {
+			isa = PBXGroup;
+			children = (
+				F563DD92146ED93200D178C1 /* Frameworks */,
+				F530E39B14E9699D004EB7C9 /* Mac */,
+				F563DD90146ED93200D178C1 /* Products */,
+				F563DDB7146ED99F00D178C1 /* Resources */,
+				F563DDB8146EDA2600D178C1 /* Source */,
+			);
+			sourceTree = "<group>";
+		};
+		F563DD90146ED93200D178C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F563DD8F146ED93200D178C1 /* Torque Tracer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F563DD92146ED93200D178C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5B6BF7014EFE3E30004BB0D /* FreeType.framework */,
+				F5D322CD1561A02500F23111 /* SDL_image.framework */,
+				F5D322CE1561A02500F23111 /* SDL.framework */,
+				F563DD95146ED93200D178C1 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F563DD95146ED93200D178C1 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F563DD96146ED93200D178C1 /* AppKit.framework */,
+				F563DDE6146EDB0800D178C1 /* OpenGL.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F563DDB7146ED99F00D178C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F530E3B014E97B8D004EB7C9 /* icon.icns */,
+				F530E3B114E97B8D004EB7C9 /* Info.plist */,
+				F530E3B214E97B8D004EB7C9 /* License.rtf */,
+				F5750357153731F8002D2177 /* mouse.png */,
+				F5DF5FC41503AAF700F41C70 /* Torque Tracer.entitlements */,
+				F5750358153731F8002D2177 /* Vera.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F563DDB8146EDA2600D178C1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F5750348153731E5002D2177 /* conversions.cpp */,
+				F5750349153731E5002D2177 /* font_class.h */,
+				F575034A153731E5002D2177 /* font.cpp */,
+				F575034B153731E5002D2177 /* ini_parse.cpp */,
+				F575034C153731E5002D2177 /* input_buttons.h */,
+				F575034D153731E5002D2177 /* main.cpp */,
+				F575034E153731E5002D2177 /* opengl.cpp */,
+				F575034F153731E5002D2177 /* resources.h */,
+				F5750350153731E5002D2177 /* sdl.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F563DD8E146ED93200D178C1 /* Torque Tracer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F563DDAD146ED93200D178C1 /* Build configuration list for PBXNativeTarget "Torque Tracer" */;
+			buildPhases = (
+				F563DD8B146ED93200D178C1 /* Sources */,
+				F563DD8C146ED93200D178C1 /* Frameworks */,
+				F563DDDD146EDA4900D178C1 /* CopyFiles */,
+				F563DD8D146ED93200D178C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Torque Tracer";
+			productName = "Torque Tracer";
+			productReference = F563DD8F146ED93200D178C1 /* Torque Tracer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F563DD86146ED93200D178C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "VDrift Team";
+			};
+			buildConfigurationList = F563DD89146ED93200D178C1 /* Build configuration list for PBXProject "torque-tracer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F563DD84146ED93200D178C1;
+			productRefGroup = F563DD90146ED93200D178C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F563DD8E146ED93200D178C1 /* Torque Tracer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F563DD8D146ED93200D178C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F530E3B314E97B8D004EB7C9 /* icon.icns in Resources */,
+				F5750359153731F8002D2177 /* mouse.png in Resources */,
+				F575035A153731F8002D2177 /* Vera.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F563DD8B146ED93200D178C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F530E39A14E9697B004EB7C9 /* SDLMain.m in Sources */,
+				F5750351153731E5002D2177 /* conversions.cpp in Sources */,
+				F5750352153731E5002D2177 /* font.cpp in Sources */,
+				F5750353153731E5002D2177 /* ini_parse.cpp in Sources */,
+				F5750354153731E5002D2177 /* main.cpp in Sources */,
+				F5750355153731E5002D2177 /* opengl.cpp in Sources */,
+				F5750356153731E5002D2177 /* sdl.cpp in Sources */,
+				F5C09E1215398B2A008D6C1C /* config_mac.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F563DDAB146ED93200D178C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = Frameworks;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					.,
+					../source,
+					Frameworks/FreeType.framework/Headers,
+					Frameworks/SDL_image.framework/Headers,
+					Frameworks/SDL.framework/Headers,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F563DDAC146ED93200D178C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = Frameworks;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					.,
+					../source,
+					Frameworks/FreeType.framework/Headers,
+					Frameworks/SDL_image.framework/Headers,
+					Frameworks/SDL.framework/Headers,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F563DDAE146ED93200D178C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Torque Tracer.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = "Torque Tracer";
+			};
+			name = Debug;
+		};
+		F563DDAF146ED93200D178C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Torque Tracer.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = "Torque Tracer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F563DD89146ED93200D178C1 /* Build configuration list for PBXProject "torque-tracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F563DDAB146ED93200D178C1 /* Debug */,
+				F563DDAC146ED93200D178C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F563DDAD146ED93200D178C1 /* Build configuration list for PBXNativeTarget "Torque Tracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F563DDAE146ED93200D178C1 /* Debug */,
+				F563DDAF146ED93200D178C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F563DD86146ED93200D178C1 /* Project object */;
+}
