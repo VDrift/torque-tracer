@@ -1,3 +1,5 @@
 source/osx-xcode/build
+source/osx-xcode/Torque Tracer.app
+source/osx-xcode/torque-tracer-mac-*
 source/osx-xcode/torque-tracer.xcodeproj/xcuserdata
 source/osx-xcode/torque-tracer.xcodeproj/project.xcworkspace
