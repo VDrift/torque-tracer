@@ -59,7 +59,7 @@ however even with a low resolution you should get pretty good results.
 (complete but may need testing) When you see a car's quoted torque and
 horsepower from the manufacturer it says something like this:
 
-> 220 bhp @ 5500 rpm
+> 220 bhp @ 5500 rpm  
 > 180 ft-lb @ 3000 rpm
 
 * Press 'm' a second time to enter the text mode which will allow you to define
