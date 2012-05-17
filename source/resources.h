@@ -1,7 +1,4 @@
-
-
 #include <math.h>
-
 
 //FreeType Headers
 #include <ft2build.h>
@@ -10,42 +7,41 @@
 #include <freetype/ftoutln.h>
 #include <freetype/fttrigon.h>
 
-// SDL
+//SDL and OpenGL Headers
+#ifdef __APPLE__
+#include "SDL/SDL.h"
+#include "SDL/SDL_opengl.h"
+#include "SDL_image/SDL_image.h"
+
+#else
 #include "SDL.h"
 #include "SDL_opengl.h"
 #include "SDL_image.h"
-
-//OpenGL Headers
-#include <GL/gl.h>
-#include <GL/glu.h>
+#endif
 
 // stl
 #include <string>
 #include <vector>
 using namespace std;
 
-
 #include "font_class.h"
 #include "input_buttons.h"
-
 
 class c_vector2f
 {
 public:
-float a[2];
-
-
-c_vector2f()
-{
-    a[0] = 0;
-    a[1] = 0;
-}
-void set(float x, float y)
-{
-    a[0] = x;
-    a[1] = y;
-}
-
+    float a[2];
+    
+    c_vector2f()
+    {
+        a[0] = 0;
+        a[1] = 0;
+    }
+    void set(float x, float y)
+    {
+        a[0] = x;
+        a[1] = y;
+    }
 };
 
 //////////////////////////
@@ -62,15 +58,14 @@ void displayString(string str);
 
 void load_configuration(string filename);
 
-
-
-
-
-
 float convert_XPosToRpm(float xpos);
 float convert_RpmToXPos(float rpm);
 float convert_YPosToTorque(float ypos);
 float convert_TorqueToYPos(float torque);
+
+#ifdef __APPLE__
+string get_mac_dir();
+#endif
 
 /////////////////////////
 // externs
@@ -81,7 +76,6 @@ extern unsigned int displayBpp;
 extern float displayAspectRatio;
 extern bool displayFullscreen;
 extern bool hardwareCursor;
-
 
 extern float gridStartX;
 extern float gridStartY;
@@ -105,9 +99,7 @@ extern float pictureB;
 
 extern float torqueRange;
 
-
 extern unsigned int closestPointToMouse;
-
 
 extern string enteredText;
 
@@ -117,7 +109,6 @@ extern int inputMode;
 #define INPUT_MODE_DRAW		0
 #define INPUT_MODE_RESIZE	1
 #define INPUT_MODE_ENTER_TEXT		2
-
 
 extern int torqueMode;
 #define TORQUEMODE_METRIC		0
